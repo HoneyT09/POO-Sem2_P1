@@ -18,7 +18,9 @@ public class Practica3 {
         Scanner entrada = new Scanner(System.in);
         int arreglo[], nElementos, aux;
         
-       nElementos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de elemetos: "));
+        //Eso del Joption es para un modelo juevo de ingrese numeros pero puede ser de otra manera: entrada.nextInt();y en la 
+        //siguiente linea ponerle sout y entre parentesisi y comillas lo que pedimos 
+       nElementos = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de elemetos: ")); 
         arreglo = new int[nElementos];
                 
                 for(int i=0;i<nElementos;i++){
@@ -38,12 +40,12 @@ public class Practica3 {
                 } 
                 System.out.print("\nArreglo ordenado en forma creciente: ");
                 for(int i=0;i<nElementos;i++){
-                    System.out.print(arreglo[i]+"-");
+                    System.out.print(arreglo[i]+",");
                 }
                 
                 System.out.print("\nArreglo ordenado en forma decreciente: ");
                 for(int i=(nElementos-1);i>=0;i--){
-                    System.out.print(arreglo[i]+"-");
+                    System.out.print(arreglo[i]+",");
                 }
                 System.out.println("");
     }
