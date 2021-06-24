@@ -9,7 +9,10 @@ package Parcial2;
  *
  * @author Honey
  */
-public class Main {
-    Mamifero mamifero1 = new Mamifero 
-            
+public interface Conjunto {
+    public void setmodificar(int modificar);
+    public void setvisita(double visita);
+    public void setordenador(double ordenador);
+    
+    
 }
